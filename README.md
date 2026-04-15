@@ -1,64 +1,85 @@
-LogHunter — Advanced Log Analysis Tool for Cybersecurity
+# 🔍 LogHunter
+
+> Advanced Log Analysis Tool for Cybersecurity (SOC-focused)
 
 LogHunter is a modular Python-based CLI tool designed to parse, search,
-and analyze system and application logs. Built with cybersecurity in
-mind, it helps detect suspicious activity, identify Indicators of
-Compromise (IOCs), and generate structured reports.
+and analyze system and application logs.\
+It helps detect suspicious activity and identify Indicators of
+Compromise (IOCs) such as malicious IPs, hashes, and attack patterns.
 
 ------------------------------------------------------------------------
 
-FEATURES
+## 🚀 Features
 
--   Log Parsing: Supports syslog, Apache/Nginx, JSON logs, and raw text
-
--   Search Engine: Keyword search, regex matching, severity filtering
-
--   IOC Detection: Malicious IPs, hashes (SHA256), suspicious
-    user-agents
-
--   Output & Reporting: Terminal output and export to JSON, CSV, HTML
-
--   Modular Architecture: Plugin-based and extensible design
-
-------------------------------------------------------------------------
-
-EXAMPLE USAGE
-
-Detect failed logins: py -3.13 main.py test.log -k “Failed password”
-
-Filter errors: py -3.13 main.py test.log -s error
-
-Detect IOCs: py -3.13 main.py test.log –ioc
-
-Export report: py -3.13 main.py test.log –export html –output report
+-   🔎 **Multi-format Log Parsing**
+    -   Syslog
+    -   Apache / Nginx
+    -   JSON logs
+    -   Raw text
+-   🧠 **Search Engine**
+    -   Keyword search
+    -   Regex-based detection
+    -   Severity classification (info, warning, error, critical)
+-   🚨 **IOC Detection**
+    -   Malicious IP detection
+    -   SHA256 hash matching
+    -   Suspicious User-Agent detection
+-   📊 **Reporting**
+    -   Terminal output (colorized with rich)
+    -   Export to JSON, CSV, HTML
+-   🧩 **Modular Architecture**
+    -   Plugin-based parsers
+    -   Easily extensible
 
 ------------------------------------------------------------------------
 
-INSTALLATION
+## 🧪 Example Usage
 
-git clone https://github.com/Trollerixo/loghunter.git cd loghunter py
--3.13 -m pip install -r requirements.txt
-
-------------------------------------------------------------------------
-
-IOC CONFIGURATION
-
-Edit: data/ip_blacklist.txt data/hashes.txt data/bad_useragents.txt
-
-One entry per line.
+``` bash
+py -3.13 main.py test.log -k "Failed password"
+py -3.13 main.py test.log -s error
+py -3.13 main.py test.log --ioc
+py -3.13 main.py test.log --export html --output report
+```
 
 ------------------------------------------------------------------------
 
-SKILLS DEMONSTRATED
+## ⚙️ Installation
 
--   Log analysis
--   Threat detection
--   Python scripting
--   Regex and pattern matching
+``` bash
+git clone https://github.com/tuusuario/loghunter.git
+cd loghunter
+py -3.13 -m pip install -r requirements.txt
+```
+
+### 🔧 Development dependencies
+
+``` bash
+py -3.13 -m pip install -r requirements-dev.txt
+```
+
+------------------------------------------------------------------------
+
+## 🧠 IOC Configuration
+
+Edit:
+
+    data/ip_blacklist.txt
+    data/hashes.txt
+    data/bad_useragents.txt
+
+------------------------------------------------------------------------
+
+## 🎯 Skills Demonstrated
+
+-   Log analysis & event correlation\
+-   Threat detection using IOC matching\
+-   Python scripting & modular design\
+-   Regex and pattern recognition\
 -   SOC fundamentals
 
 ------------------------------------------------------------------------
 
-AUTHOR
+## 👨‍💻 Author
 
 Fabricio Daniel Pacheco Calderón
