@@ -1,0 +1,8 @@
+Jan 14 10:00:01 myhost sshd[1234]: Failed password for root from 192.168.1.10
+Jan 14 10:00:02 myhost sshd[1234]: Accepted password for admin from 10.0.0.5
+Jan 14 10:00:03 myhost kernel: error reading disk sector 0x00FF
+Jan 14 10:00:04 myhost nginx: GET /admin HTTP/1.1 200
+Jan 14 10:00:05 myhost sudo: invalid user attempt by guest
+Jan 14 00:00:01 myhost sshd: Failed password from 185.220.101.1
+Jan 14 10:00:09 myhost nginx: GET /login HTTP/1.1 200 "-" "sqlmap/1.5"
+Jan 14 10:00:10 myhost app: File executed with hash e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

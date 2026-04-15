@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title>LogHunter Report</title><style>body{font-family:monospace;background:#111;color:#eee}table{width:100%;border-collapse:collapse}th,td{border:1px solid #333;padding:6px;text-align:left}th{background:#222}tr:nth-child(even){background:#1a1a1a}</style></head><body><h1>LogHunter Report</h1><p>8 results</p><table><tr><th>Timestamp</th><th>Level</th><th>Source</th><th>Message</th><th>IOC Hits</th></tr><tr><td>Jan 14 10:00:01</td><td>error</td><td>myhost</td><td>Failed password for root from 192.168.1.10</td><td style='color:red'></td></tr>
+<tr><td>Jan 14 10:00:02</td><td>info</td><td>myhost</td><td>Accepted password for admin from 10.0.0.5</td><td style='color:red'></td></tr>
+<tr><td>Jan 14 10:00:03</td><td>error</td><td>myhost</td><td>error reading disk sector 0x00FF</td><td style='color:red'></td></tr>
+<tr><td>Jan 14 10:00:04</td><td>info</td><td>myhost</td><td>GET /admin HTTP/1.1 200</td><td style='color:red'></td></tr>
+<tr><td>Jan 14 10:00:05</td><td>warning</td><td>myhost</td><td>invalid user attempt by guest</td><td style='color:red'></td></tr>
+<tr><td>Jan 14 00:00:01</td><td>error</td><td>host</td><td>Failed password from 185.220.101.1</td><td style='color:red'>MALICIOUS_IP:185.220.101.1</td></tr>
+<tr><td>Jan 14 10:00:09</td><td>info</td><td>myhost</td><td>GET /login HTTP/1.1 200 "-" "sqlmap/1.5"</td><td style='color:red'>BAD_UA:sqlmap</td></tr>
+<tr><td>Jan 14 10:00:10</td><td>info</td><td>myhost</td><td>File executed with hash e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</td><td style='color:red'>MALWARE_HASH:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</td></tr>
+</table></body></html>
