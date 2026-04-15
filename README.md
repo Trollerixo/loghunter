@@ -47,7 +47,7 @@ py -3.13 main.py test.log --export html --output report
 ## ⚙️ Installation
 
 ``` bash
-git clone https://github.com/tuusuario/loghunter.git
+git clone https://github.com/Trollerixo/loghunter.git
 cd loghunter
 py -3.13 -m pip install -r requirements.txt
 ```
